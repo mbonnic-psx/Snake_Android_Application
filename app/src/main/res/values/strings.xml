@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="right_button_description" />
+    <string name="top_button_description"><![CDATA[<string name=\"top_button_description\">Top Button</string>]]></string>
+    <string name="left_button_description"><![CDATA[<string name=\"left_button_description\">Left Button</string>]]></string>
+    <string name="bottom_button_description"><![CDATA[<string name=\"bottom_button_description\">Bottom Button</string>]]></string>
+    <string name="right_but_description"><![CDATA[<string name=\"right_but_description\">Right Button</string>]]></string>
+    <string name="high_score">HIGHSCORES</string>
+    <string name="rank">RANK</string>
+    <string name="name">NAME</string>
+    <string name="score">SCORE</string>
+    <string name="enter_name">ENTER NAME:</string>
+    <string name="player_name">PLAYER NAME</string>
+    <string name="checkmark"><![CDATA[<string name=\"top_button_description\">Top Button</string>]]></string>
+
+</resources>

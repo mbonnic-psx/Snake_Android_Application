@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/appleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/apple_blue" />
+
+    <RelativeLayout
+        android:layout_above="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1D573F"
+        android:padding="10dp">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/scoreTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/cubic"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomBar">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/topBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/top_button_description"
+            android:background="#1D573F"
+            android:src="@drawable/topbutton"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/leftBtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/left_button_description"
+                android:background="#1D573F"
+                android:src="@drawable/leftbutton"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/rightBtn"
+                android:layout_marginStart="80dp"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/right_but_description"
+                android:background="#1D573F"
+                android:src="@drawable/rightbutton"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/bottomBtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/bottom_button_description"
+            android:background="#1D573F"
+            android:src="@drawable/bottombutton"/>
+        <TextView
+            android:id="@+id/highestScoreTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="16dp"
+            android:text="Highest Score: 0"
+            android:fontFamily="@font/cubic"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>
